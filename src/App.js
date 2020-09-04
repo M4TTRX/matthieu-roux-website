@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -7,10 +6,8 @@ function App() {
     <div className="App">
       <div>
         <header className="App-header">
-          Matthieu Roux
+          Matthieu Roux's Website
       </header>
-      </div>
-      <div>
         <p>
           Welcome to my personal website haha, not much to see here, come back later thanks.
       </p>
