@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/matthieu-roux-website/precache-manifest.100618e6e2baf97bcee2b645bb9d164b.js"
+  "/matthieu-roux-website/precache-manifest.bc0f6bbc53f66c2513bfaa6ad637233a.js"
 );
 
 self.addEventListener('message', (event) => {
