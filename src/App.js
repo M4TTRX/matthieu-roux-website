@@ -4,6 +4,7 @@ import CoverPicture from "./components/coverPicture";
 
 function App() {
   const contactMeSection = creatContactMeSection();
+  const createMyProjects = createMyProjectsSection();
   return (
     <div className="App">
       <div>
@@ -11,9 +12,10 @@ function App() {
         <div className="underline-title"> </div>
         <div className="flexRow">
           <p className="limited-width">
-            Hello there, thanks for taking the time to visit my website! This
-            place is still in construction so I will keep adding more things to
-            it. In the meantime, you can find my contact info
+            Hi my name is Matthieu Roux, and thanks for taking the time to visit
+            my website! This place is still in construction so I will keep
+            adding more things to it. In the meantime, you can find my contact
+            info
           </p>
           <div className="image-container">
             {CoverPicture()}
@@ -60,6 +62,8 @@ function createMyProjectsSection() {
       <p>
         Wonder what I can make? Here's a list of some of the work I have made
         both for a class and during my free time.
+        <br />
+        Work in progress, coming soon.
       </p>
     </div>
   );
