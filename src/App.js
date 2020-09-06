@@ -11,10 +11,9 @@ function App() {
         <div className="underline-title"> </div>
         <div className="flexRow">
           <p className="limited-width">
-            Hi my name is Matthieu Roux, and thanks for taking the time to visit
-            my website! This place is still in construction so I will keep
-            adding more things to it. In the meantime, you can find my contact
-            info
+            Hello there, thanks for taking the time to visit my website! This
+            place is still in construction so I will keep adding more things to
+            it. In the meantime, you can find my contact info
           </p>
           <div className="image-container">
             {CoverPicture()}
