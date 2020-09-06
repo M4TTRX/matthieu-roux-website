@@ -4,7 +4,6 @@ import CoverPicture from "./components/coverPicture";
 
 function App() {
   const contactMeSection = creatContactMeSection();
-  const createMyProjects = createMyProjectsSection();
   return (
     <div className="App">
       <div>
