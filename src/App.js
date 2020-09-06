@@ -4,7 +4,7 @@ import CoverPicture from "./components/coverPicture";
 
 function App() {
   const contactMeSection = creatContactMeSection();
-  const createMyProjects = createMyProjectsSection();
+  const myProjectsSection = createMyProjectsSection();
   return (
     <div className="App">
       <div>
@@ -21,10 +21,10 @@ function App() {
             {CoverPicture()}
             <div className="yellow-cover-decoration"></div>
             <div className="black-cover-decoration"></div>
-            {/* <div className="dot-pattern-decoration"></div> */}
           </div>
         </div>
       </div>
+      {myProjectsSection}
       {contactMeSection}
     </div>
   );
