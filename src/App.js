@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.scss";
-import CoverPicture from "./components/coverPicture";
+import "./style/App.scss";
+import coverPicture from "./components/coverPicture";
+import projectCard from "./components/projectCard";
 
 function App() {
   const contactMeSection = creatContactMeSection();
@@ -8,17 +9,19 @@ function App() {
   return (
     <div className="App">
       <div>
-        <header className="title">Hi, I'm Matthieu</header>
-        <div className="underline-title"> </div>
         <div className="flexRow">
-          <p className="limited-width">
-            Hi my name is Matthieu Roux, and thanks for taking the time to visit
-            my website! This place is still in construction so I will keep
-            adding more things to it. In the meantime, you can find my contact
-            info
-          </p>
+          <div className="flexColumn">
+            <header className="title">Hi, I'm Matthieu</header>
+            <div className="underline-title"> </div>
+            <p className="limited-width">
+              Hi my name is Matthieu Roux, and thanks for taking the time to
+              visit my website! This place is still in construction so I will
+              keep adding more things to it. In the meantime, you can find my
+              contact info
+            </p>
+          </div>
           <div className="image-container">
-            {CoverPicture()}
+            {coverPicture()}
             <div className="yellow-cover-decoration"></div>
             <div className="black-cover-decoration"></div>
           </div>
@@ -56,6 +59,12 @@ function creatContactMeSection() {
 }
 
 function createMyProjectsSection() {
+  const studyQProject = {
+    title: "StudyQ",
+    description:
+      "StudyQ was an app that allowed the creation of virtual Qcards by scanning MCQ exams. It also allowed users to share their Qcard sets and compete with their friends",
+    url: "https://github.com/M4TTRX/studyq",
+  };
   return (
     <div>
       {createHeader1("My Projects")}
@@ -65,6 +74,7 @@ function createMyProjectsSection() {
         <br />
         Work in progress, coming soon.
       </p>
+      {projectCard(studyQProject)}
     </div>
   );
 }

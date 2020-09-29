@@ -1,6 +1,6 @@
 import React from "react";
 
-function CoverPicture() {
+function coverPicture() {
   return (
     <img
       src={require("../resources/matthieu-roux-profile.webp")}
@@ -10,4 +10,4 @@ function CoverPicture() {
   );
 }
 
-export default CoverPicture;
+export default coverPicture;

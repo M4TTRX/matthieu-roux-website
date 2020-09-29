@@ -1,0 +1,57 @@
+// Primary Colors
+$primary-color: #ffc700;
+$light-grey: #ebebeb;
+
+.project-card {
+  max-width: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-left: 12px solid $light-grey;
+  border-bottom: 12px solid $light-grey;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.project-card-button {
+  border: 1px solid $primary-color;
+  position: relative;
+  z-index: 1;
+  background-color: $primary-color;
+  width: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  float: right;
+  transition: transform 400ms;
+}
+.project-card-button:hover {
+  transform: translate(5%, -20%);
+}
+.project-card-button-behind {
+  position: relative;
+  z-index: 0;
+  background-color: black;
+  width: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  float: right;
+  transform: translateX(100%);
+}
+
+.technology-picture {
+  max-height: 30px;
+  max-width: 30px;
+  padding: 5px;
+}
+
+// Animations
+
+@keyframes hoverButton {
+  from {
+  }
+  to {
+    transform: translate(6%, -15%);
+  }
+}
