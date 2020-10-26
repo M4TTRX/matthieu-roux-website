@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4cc51b48f35ba2a1e7cd01918ac00c5e",
+    "revision": "27b81f24ff7a6d8531236fb675d0be09",
     "url": "/matthieu-roux-website/index.html"
   },
   {
@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/matthieu-roux-website/static/css/main.5153cf7a.chunk.css"
   },
   {
-    "revision": "92058a0b478425b12167",
-    "url": "/matthieu-roux-website/static/js/2.56be5794.chunk.js"
+    "revision": "d00683fee3a3fd9013b3",
+    "url": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/matthieu-roux-website/static/js/2.56be5794.chunk.js.LICENSE.txt"
+    "revision": "570d362d673dab785e62d2b8563e1118",
+    "url": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js.LICENSE.txt"
   },
   {
     "revision": "04a579e79bca0b842969",
