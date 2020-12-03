@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/matthieu-roux-website/static/css/main.5153cf7a.chunk.css",
+    "main.css": "/matthieu-roux-website/static/css/main.e0eb3bc0.chunk.css",
     "main.js": "/matthieu-roux-website/static/js/main.fc7b8fe1.chunk.js",
     "main.js.map": "/matthieu-roux-website/static/js/main.fc7b8fe1.chunk.js.map",
     "runtime-main.js": "/matthieu-roux-website/static/js/runtime-main.b728b16e.js",
@@ -8,16 +8,16 @@
     "static/js/2.84c3b283.chunk.js": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js",
     "static/js/2.84c3b283.chunk.js.map": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js.map",
     "index.html": "/matthieu-roux-website/index.html",
-    "precache-manifest.80bf206f55962b3d9c1883af854eb860.js": "/matthieu-roux-website/precache-manifest.80bf206f55962b3d9c1883af854eb860.js",
+    "precache-manifest.eded39a94af43af18073b41585be8603.js": "/matthieu-roux-website/precache-manifest.eded39a94af43af18073b41585be8603.js",
     "service-worker.js": "/matthieu-roux-website/service-worker.js",
-    "static/css/main.5153cf7a.chunk.css.map": "/matthieu-roux-website/static/css/main.5153cf7a.chunk.css.map",
+    "static/css/main.e0eb3bc0.chunk.css.map": "/matthieu-roux-website/static/css/main.e0eb3bc0.chunk.css.map",
     "static/js/2.84c3b283.chunk.js.LICENSE.txt": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js.LICENSE.txt",
     "static/media/matthieu-roux-profile.webp": "/matthieu-roux-website/static/media/matthieu-roux-profile.4d8082f7.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.b728b16e.js",
     "static/js/2.84c3b283.chunk.js",
-    "static/css/main.5153cf7a.chunk.css",
+    "static/css/main.e0eb3bc0.chunk.css",
     "static/js/main.fc7b8fe1.chunk.js"
   ]
 }
