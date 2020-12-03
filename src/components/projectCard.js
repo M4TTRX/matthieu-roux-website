@@ -6,12 +6,12 @@ function projectCard(project) {
     <div className="project-card">
       <h2>{project.title}</h2>
       <p>{project.description}</p>
-      {SeeMoreButton(project.url)}
+      {seeMoreButton(project.url)}
     </div>
   );
 }
 
-function SeeMoreButton(url) {
+function seeMoreButton(url) {
   return (
     <div>
       <a href={url}>
@@ -22,7 +22,7 @@ function SeeMoreButton(url) {
   );
 }
 
-function TechnologyImage(technology) {
+function technologyImage(technology) {
   return (
     <img
       src={require({ technology })}

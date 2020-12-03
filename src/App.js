@@ -65,6 +65,12 @@ function createMyProjectsSection() {
       "StudyQ was an app that allowed the creation of virtual Qcards by scanning MCQ exams. It also allowed users to share their Qcard sets and compete with their friends",
     url: "https://github.com/M4TTRX/studyq",
   };
+  const workoutsProject = {
+    title: "Workouts",
+    description:
+      "Workouts is a flutter app made to help people who exercise to track their progress, it is designed to allow users to add exercises they do regularly fast, and to be flexible in term of possible exercises",
+    url: "https://github.com/M4TTRX/homeworkouts",
+  };
   return (
     <div>
       {createHeader1("My Projects")}
@@ -75,6 +81,7 @@ function createMyProjectsSection() {
         Work in progress, coming soon.
       </p>
       {projectCard(studyQProject)}
+      {projectCard(workoutsProject)}
     </div>
   );
 }
