@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/matthieu-roux-website/static/css/main.e0eb3bc0.chunk.css",
-    "main.js": "/matthieu-roux-website/static/js/main.fc7b8fe1.chunk.js",
-    "main.js.map": "/matthieu-roux-website/static/js/main.fc7b8fe1.chunk.js.map",
-    "runtime-main.js": "/matthieu-roux-website/static/js/runtime-main.b728b16e.js",
-    "runtime-main.js.map": "/matthieu-roux-website/static/js/runtime-main.b728b16e.js.map",
-    "static/js/2.84c3b283.chunk.js": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js",
-    "static/js/2.84c3b283.chunk.js.map": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js.map",
-    "index.html": "/matthieu-roux-website/index.html",
-    "precache-manifest.eded39a94af43af18073b41585be8603.js": "/matthieu-roux-website/precache-manifest.eded39a94af43af18073b41585be8603.js",
-    "service-worker.js": "/matthieu-roux-website/service-worker.js",
-    "static/css/main.e0eb3bc0.chunk.css.map": "/matthieu-roux-website/static/css/main.e0eb3bc0.chunk.css.map",
-    "static/js/2.84c3b283.chunk.js.LICENSE.txt": "/matthieu-roux-website/static/js/2.84c3b283.chunk.js.LICENSE.txt",
-    "static/media/matthieu-roux-profile.webp": "/matthieu-roux-website/static/media/matthieu-roux-profile.4d8082f7.webp"
+    "main.css": "/static/css/main.e0eb3bc0.chunk.css",
+    "main.js": "/static/js/main.55563e8e.chunk.js",
+    "main.js.map": "/static/js/main.55563e8e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e181a14c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e181a14c.js.map",
+    "static/js/2.84c3b283.chunk.js": "/static/js/2.84c3b283.chunk.js",
+    "static/js/2.84c3b283.chunk.js.map": "/static/js/2.84c3b283.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6362faf4c9f41e623411bdf96035984a.js": "/precache-manifest.6362faf4c9f41e623411bdf96035984a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e0eb3bc0.chunk.css.map": "/static/css/main.e0eb3bc0.chunk.css.map",
+    "static/js/2.84c3b283.chunk.js.LICENSE.txt": "/static/js/2.84c3b283.chunk.js.LICENSE.txt",
+    "static/media/matthieu-roux-profile.webp": "/static/media/matthieu-roux-profile.4d8082f7.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.b728b16e.js",
+    "static/js/runtime-main.e181a14c.js",
     "static/js/2.84c3b283.chunk.js",
     "static/css/main.e0eb3bc0.chunk.css",
-    "static/js/main.fc7b8fe1.chunk.js"
+    "static/js/main.55563e8e.chunk.js"
   ]
 }
