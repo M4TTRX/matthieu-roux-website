@@ -88,6 +88,15 @@ function createMyProjectsSection() {
         repository here yet as it would be a violation of academic integrity.
       </p>
       <h2>StudyQ</h2>
+      <p>
+        StudyQ is an app that helped students study more efficiently by
+        generating a set of virtual Qcards when scanning and exam with multiple
+        choice questions. It also allowed users to share their Qcard sets and
+        compete with their friends and bring a fun aspect to studying.
+      </p>
+      <a href="https://github.com/M4TTRX/studyq" className="url">
+        Github Repository
+      </a>
     </div>
   );
 }
