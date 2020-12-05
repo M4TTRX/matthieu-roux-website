@@ -1,26 +1,45 @@
 import React from "react";
 import "./App.scss";
-import "./img.scss";
-import CoverPicture from "./components/coverPicture";
+import CoverPicture from "./components/coverPicture/coverPicture";
 import Button from "./components/button/button";
+import DownloadButton from "./components/button/downloadButton";
 
 function App() {
+  const bannerSection = createBannerSection();
   const aboutMeSection = createAboutMe();
   const myProjectsSection = createMyProjectsSection();
   const myResumeSection = createResumeSection();
   return (
     <div className="App">
-      <div className="banner-wrapper">
-        <div className="image-container2">{CoverPicture()}</div>
-        <div className="padded-div">
-          <header className="title">
-            Matthieu <br /> Roux{" "}
-          </header>
-        </div>
-      </div>
+      {bannerSection}
       {myProjectsSection}
       {aboutMeSection}
       {myResumeSection}
+    </div>
+  );
+}
+
+function createBannerSection() {
+  return (
+    <div className="banner-wrapper">
+      {CoverPicture()}
+      <div className="padded-div">
+        <header className="title">
+          Matthieu <br /> Roux{" "}
+        </header>
+        <div className="flex-row">
+          {Button(
+            "LinkedIn",
+            "https://www.linkedin.com/in/matthieu-roux-317878153/"
+          )}
+          {Button("Github", "https://github.com/M4TTRX")}
+          {Button("Email", "mailto:matthieurouxleoncini@gmail.com")}
+          {DownloadButton(
+            "Resume PDF",
+            process.env.PUBLIC_URL + "/resume/resume-en.pdf"
+          )}
+        </div>
+      </div>
     </div>
   );
 }
@@ -36,23 +55,6 @@ function createAboutMe() {
         pushed our family to move to Romania, then Poland and finally to Canada.
         This lifestyle taught me to adapt quickly to unknown environment where
         sometimes I do not even know the local language.
-      </p>
-      <p>
-        -{" "}
-        <a href="mailto:matthieurouxleoncini@gmail.com" className="url">
-          Email
-        </a>
-        <br />-{" "}
-        <a href="https://github.com/M4TTRX" className="url">
-          Github
-        </a>
-        <br />-{" "}
-        <a
-          href="https://www.linkedin.com/in/matthieu-roux-317878153/"
-          className="url"
-        >
-          LinkedIn
-        </a>
       </p>
     </div>
   );
@@ -98,9 +100,7 @@ function createMyProjectsSection() {
         choice questions. It also allowed users to share their Qcard sets and
         compete with their friends and bring a fun aspect to studying.
       </p>
-      <a href="https://github.com/M4TTRX/studyq" className="url">
-        Github Repository
-      </a>
+      {Button("Github Repository", "https://github.com/M4TTRX/studyq")}
     </div>
   );
 }
@@ -108,11 +108,15 @@ function createMyProjectsSection() {
 function createResumeSection() {
   return (
     <div className="padded-div">
-      <header className="h1">Resume</header>
+      <h1 className="h1">Resume</h1>
       <p>
-        Want to know more about my education and work experience? Take a look at
-        my resume!
+        Want to know more about my education adn work experience? Check out my
+        resume below!
       </p>
+      {DownloadButton(
+        "Resume PDF",
+        process.env.PUBLIC_URL + "/resume/resume-en.pdf"
+      )}
     </div>
   );
 }

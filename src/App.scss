@@ -1,9 +1,5 @@
 // Global Variables
 
-// Primary Colors
-$primary-color: #ffc700;
-$light-grey: #ebebeb;
-
 $background-light: #ece8e1;
 $header-light: #0c1a28;
 $body-light: #0f1923;
@@ -18,14 +14,15 @@ $body-dark: #ece8e1;
   display: flex;
   flex-direction: column;
   background-color: $background-light;
+  padding-bottom: 150px;
 }
 .padded-div {
-  margin-top: calc(8pt + 8vmin);
+  margin-top: calc(15pt + 2vmin);
   margin-right: calc(8pt + 8vmin);
   margin-left: calc(8pt + 8vmin);
   position: relative;
 }
-.flexRow {
+.flex-row {
   justify-content: right;
   display: flex;
   flex-direction: row;
@@ -41,14 +38,15 @@ $body-dark: #ece8e1;
 
 .title {
   z-index: 10;
-  min-height: 30vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
   line-height: 75%;
-  font-size: calc(48px + 10vmin);
-  color: $background-light;
-  text-shadow: 0px 0px 25px rgba(12, 26, 40, 0.4);
+  font-size: calc(4em + 10vmin);
+  color: $header-light;
+  margin-bottom: 5vmin;
+  margin-top: 5vmin;
 }
 
 /* Headers  */
@@ -59,7 +57,7 @@ $body-dark: #ece8e1;
   max-height: 0vh;
   display: flex;
   justify-content: center;
-  font-size: calc(10px + 7vmin);
+  font-size: calc(3em + 7vmin);
   color: black;
   color: $header-light;
 }
