@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.scss";
+import "./img.scss";
 import CoverPicture from "./components/coverPicture";
+import Button from "./components/button/button";
 
 function App() {
   const aboutMeSection = createAboutMe();
@@ -8,20 +10,24 @@ function App() {
   const myResumeSection = createResumeSection();
   return (
     <div className="App">
-      <div>
-        <header className="title">
-          Matthieu <br /> Roux{" "}
-        </header>
+      <div className="banner-wrapper">
+        <div className="image-container2">{CoverPicture()}</div>
+        <div className="padded-div">
+          <header className="title">
+            Matthieu <br /> Roux{" "}
+          </header>
+        </div>
       </div>
-      {aboutMeSection}
       {myProjectsSection}
+      {aboutMeSection}
+      {myResumeSection}
     </div>
   );
 }
 
 function createAboutMe() {
   return (
-    <div>
+    <div className="padded-div">
       <h1 className="h1">About Me</h1>
       <p>
         I am a 21 year old student at Queen's University who's about to finish
@@ -54,12 +60,12 @@ function createAboutMe() {
 
 function createMyProjectsSection() {
   return (
-    <div>
+    <div className="padded-div">
       <h1 className="h1">Portfolio</h1>
-      <h2> Fitly</h2>
+      <h2> Spotme</h2>
       <p>
-        Fitly is the social way to track your daily workout. The idea came to me
-        when I was unhappy with the time my friend took to write down his
+        Spotme is the social way to track your daily workout. The idea came to
+        me when I was unhappy with the time my friend took to write down his
         progress when weight lifting with him: it was slow and he could not
         easily track his progress.
       </p>
@@ -74,9 +80,7 @@ function createMyProjectsSection() {
         The app is still work in progress, but you can check out its github
         repository.
       </p>
-      <a href="https://github.com/M4TTRX/fitly" className="url">
-        Github Repository
-      </a>
+      {Button("Github Repository", "https://github.com/M4TTRX/spotme")}
       <h2> Reading Glasses</h2>
       <p>
         Reading glasses (development name) is pair of glasses that helps the
@@ -103,7 +107,7 @@ function createMyProjectsSection() {
 
 function createResumeSection() {
   return (
-    <div>
+    <div className="padded-div">
       <header className="h1">Resume</header>
       <p>
         Want to know more about my education and work experience? Take a look at

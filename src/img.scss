@@ -1,0 +1,22 @@
+.image-container {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+  position: absolute;
+  justify-content: right;
+}
+.image-container2 {
+  height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  z-index: 0;
+  position: absolute;
+  justify-content: right;
+  // background: #0c1a28;
+}
+img.coverPhoto {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

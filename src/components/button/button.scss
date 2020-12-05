@@ -1,0 +1,17 @@
+$body-light: #0f1923;
+$background-light: #ece8e1;
+
+.project-card-button {
+  border: 1px solid $body-light;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+  transition: transform 400ms;
+  color: $body-light;
+}
+.project-card-button:hover {
+  color: $background-light;
+  background-color: $body-light;
+}

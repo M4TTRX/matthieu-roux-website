@@ -15,31 +15,40 @@ $body-dark: #ece8e1;
 /* Main layout elements */
 .App {
   text-align: start;
-  padding: calc(8pt + 8vmin);
   display: flex;
   flex-direction: column;
   background-color: $background-light;
 }
+.padded-div {
+  margin-top: calc(8pt + 8vmin);
+  margin-right: calc(8pt + 8vmin);
+  margin-left: calc(8pt + 8vmin);
+  position: relative;
+}
 .flexRow {
-  justify-content: space-between;
+  justify-content: right;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
 }
+.banner-wrapper {
+  position: relative;
+  height: calc(200px + 20vmax);
+}
 
 /* Title */
 
 .title {
-  z-index: 1;
-  position: relative;
+  z-index: 10;
   min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
   line-height: 75%;
   font-size: calc(48px + 10vmin);
-  color: $header-light;
+  color: $background-light;
+  text-shadow: 0px 0px 25px rgba(12, 26, 40, 0.4);
 }
 
 /* Headers  */
