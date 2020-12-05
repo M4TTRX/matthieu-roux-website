@@ -51,10 +51,10 @@ function createAboutMe() {
       <p>
         I am a 21 year old student at Queen's University who's about to finish
         his degree in Computer Engineering. I was born in Reunion Island, a
-        French remote department in the Indian Ocean, my father's work ahs
-        pushed our family to move to Romania, then Poland and finally to Canada.
-        This lifestyle taught me to adapt quickly to unknown environment where
-        sometimes I do not even know the local language.
+        French Territory in the Indian Ocean, and my father's work has pushed
+        our family to move to Romania, Poland and then Canada. This lifestyle
+        taught me to adapt quickly to unknown environments where sometimes I do
+        not even know the local language.
       </p>
     </div>
   );
@@ -72,7 +72,7 @@ function createMyProjectsSection() {
         easily track his progress.
       </p>
       <p>
-        After out he wasn't the only person using notebooks and being
+        After learning he wasn't the only person using notebooks and being
         unsatisfied with the existing apps that could help them track their
         progress, I decided to take the matter in my own hands and make my own
         fitness application, made for people who like to lift weights and keep
@@ -85,20 +85,20 @@ function createMyProjectsSection() {
       {Button("Github Repository", "https://github.com/M4TTRX/spotme")}
       <h2> Reading Glasses</h2>
       <p>
-        Reading glasses (development name) is pair of glasses that helps the
-        visually impaired read. Upon the press of a button, the glasses will
-        read the text that is presented in front of them.
+        Reading glasses (working title) is a pair of glasses that helps the
+        visually impaired read. On the press of a button, the glasses will say
+        out loud the text that is presented in front of them.
       </p>
       <p>
-        Because this project is my capstone project, I cannot share its
-        repository here yet as it would be a violation of academic integrity.
+        This is my capstone project therefore I cannot share its repository here
+        yet as it would be a violation of academic integrity.
       </p>
       <h2>StudyQ</h2>
       <p>
         StudyQ is an app that helped students study more efficiently by
         generating a set of virtual Qcards when scanning and exam with multiple
-        choice questions. It also allowed users to share their Qcard sets and
-        compete with their friends and bring a fun aspect to studying.
+        choice questions. It also allows users to share their Qcard sets and
+        compete with their friends introducing a fun aspect to studying.
       </p>
       {Button("Github Repository", "https://github.com/M4TTRX/studyq")}
     </div>

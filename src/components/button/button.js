@@ -5,7 +5,13 @@ function Button(content, url) {
   return (
     <div>
       <a href={url}>
-        <div className="project-card-button">{content}</div>
+        <div
+          className="project-card-button"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          {content}
+        </div>
       </a>
     </div>
   );
