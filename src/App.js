@@ -110,7 +110,7 @@ function createResumeSection() {
     <div className="padded-div">
       <h1 className="h1">Resume</h1>
       <p>
-        Want to know more about my education adn work experience? Check out my
+        Want to know more about my education and work experience? Check out my
         resume below!
       </p>
       {DownloadButton(
