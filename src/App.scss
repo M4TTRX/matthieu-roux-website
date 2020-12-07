@@ -47,6 +47,7 @@ $body-dark: #ece8e1;
   color: $header-light;
   margin-bottom: 5vmin;
   margin-top: 5vmin;
+  letter-spacing: 0.1rem;
 }
 
 /* Headers  */
@@ -60,6 +61,7 @@ $body-dark: #ece8e1;
   font-size: calc(40pt + 3vmin);
   color: black;
   color: $header-light;
+  letter-spacing: 0.1rem;
 }
 
 /* Basics formatting */
