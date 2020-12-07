@@ -1,20 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
+import { ThemeProvider } from "styled-components";
 import CoverPicture from "./components/coverPicture/coverPicture";
 import Button from "./components/button/button";
 import DownloadButton from "./components/button/downloadButton";
+import { GlobalStyles } from "./resources/theme/global";
+import { lightTheme, darkTheme } from "./resources/theme/theme";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  // The function that toggles between themes
+  const toggleTheme = () => {
+    // if the theme is not light, then set it to dark
+    if (theme === "light") {
+      setTheme("dark");
+      // otherwise, it should be light
+    } else {
+      setTheme("light");
+    }
+  };
+
   const bannerSection = createBannerSection();
   const aboutMeSection = createAboutMe();
   const myProjectsSection = createMyProjectsSection();
   const myResumeSection = createResumeSection();
   return (
     <div className="App">
-      {bannerSection}
-      {myProjectsSection}
-      {aboutMeSection}
-      {myResumeSection}
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <>
+          <GlobalStyles />
+          <button onClick={toggleTheme}>Toggle theme</button>
+          {bannerSection}
+          {aboutMeSection}
+          {myProjectsSection}
+          {myResumeSection}
+        </>
+      </ThemeProvider>
     </div>
   );
 }

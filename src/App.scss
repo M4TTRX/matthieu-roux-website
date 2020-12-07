@@ -5,7 +5,7 @@ $header-light: #0c1a28;
 $body-light: #0f1923;
 
 $background-dark: #0c1a28;
-$header-dark: #deac55;
+$header-dark: #ece8e1;
 $body-dark: #ece8e1;
 
 /* Main layout elements */
@@ -13,7 +13,6 @@ $body-dark: #ece8e1;
   text-align: start;
   display: flex;
   flex-direction: column;
-  background-color: $background-light;
   padding-bottom: 150px;
 }
 .padded-div {
@@ -28,6 +27,7 @@ $body-dark: #ece8e1;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
+  max-width: 70%;
 }
 .banner-wrapper {
   position: relative;
@@ -59,8 +59,6 @@ $body-dark: #ece8e1;
   display: flex;
   justify-content: center;
   font-size: calc(56pt + 1vmin);
-  color: black;
-  color: $header-light;
   letter-spacing: 0.1em;
 }
 
