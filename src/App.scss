@@ -58,10 +58,10 @@ $body-dark: #ece8e1;
   max-height: 0vh;
   display: flex;
   justify-content: center;
-  font-size: calc(40pt + 3vmin);
+  font-size: calc(56pt + 1vmin);
   color: black;
   color: $header-light;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 }
 
 /* Basics formatting */
