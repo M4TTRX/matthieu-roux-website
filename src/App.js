@@ -9,7 +9,13 @@ import { lightTheme, darkTheme } from "./resources/theme/theme";
 import ThemeToggleIcon from "./resources/icons/themeToggleIcon";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  var userPreferredTheme = "light";
+
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    userPreferredTheme = "dark";
+  }
+
+  const [theme, setTheme] = useState(userPreferredTheme);
 
   // The function that toggles between themes
   const toggleTheme = () => {
