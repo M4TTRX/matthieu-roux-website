@@ -6,7 +6,7 @@ import Button from "./components/button/button";
 import DownloadButton from "./components/button/downloadButton";
 import { GlobalStyles } from "./resources/theme/global";
 import { lightTheme, darkTheme } from "./resources/theme/theme";
-import ThemeToggleIcon from "./components/button/themetoggleicon";
+import ThemeToggleIcon from "./resources/icons/themeToggleIcon";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -22,18 +22,16 @@ function App() {
     }
   };
 
-  const bannerSection = createBannerSection(theme);
+  const bannerSection = createBannerSection(theme, toggleTheme);
   const aboutMeSection = createAboutMe();
   const myProjectsSection = createMyProjectsSection(theme);
   const myResumeSection = createResumeSection();
-  const toggle = ThemeToggleIcon(theme);
   return (
     <div className="App">
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <>
           <GlobalStyles />
 
-          <button onClick={toggleTheme}>{toggle}</button>
           {bannerSection}
           {aboutMeSection}
           {myProjectsSection}
@@ -44,10 +42,14 @@ function App() {
   );
 }
 
-function createBannerSection(theme) {
+function createBannerSection(theme, toggleTheme) {
+  const toggle = ThemeToggleIcon(theme);
   return (
     <div className="banner-wrapper">
       {CoverPicture()}
+      <div className="theme-toggle" onClick={toggleTheme}>
+        {toggle}
+      </div>
       <div className="padded-div">
         <header className="title">
           Matthieu <br /> Roux{" "}

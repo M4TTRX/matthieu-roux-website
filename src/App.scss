@@ -50,6 +50,21 @@ $body-dark: #ece8e1;
   letter-spacing: 0.1rem;
 }
 
+/* Theme Toggle */
+
+.theme-toggle {
+  position: relative;
+  float: right;
+  width: 24;
+  z-index: 99;
+  height: 24;
+  padding: 10px;
+  &:hover {
+    width: 28;
+    height: 28;
+  }
+}
+
 /* Headers  */
 .h1 {
   flex-direction: column;
