@@ -6,6 +6,7 @@ import Button from "./components/button/button";
 import DownloadButton from "./components/button/downloadButton";
 import { GlobalStyles } from "./resources/theme/global";
 import { lightTheme, darkTheme } from "./resources/theme/theme";
+import ThemeToggleIcon from "./components/button/themetoggleicon";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -21,16 +22,18 @@ function App() {
     }
   };
 
-  const bannerSection = createBannerSection();
+  const bannerSection = createBannerSection(theme);
   const aboutMeSection = createAboutMe();
-  const myProjectsSection = createMyProjectsSection();
+  const myProjectsSection = createMyProjectsSection(theme);
   const myResumeSection = createResumeSection();
+  const toggle = ThemeToggleIcon(theme);
   return (
     <div className="App">
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <>
           <GlobalStyles />
-          <button onClick={toggleTheme}>Toggle theme</button>
+
+          <button onClick={toggleTheme}>{toggle}</button>
           {bannerSection}
           {aboutMeSection}
           {myProjectsSection}
@@ -41,7 +44,7 @@ function App() {
   );
 }
 
-function createBannerSection() {
+function createBannerSection(theme) {
   return (
     <div className="banner-wrapper">
       {CoverPicture()}
@@ -52,10 +55,11 @@ function createBannerSection() {
         <div className="flex-row">
           {Button(
             "LinkedIn",
-            "https://www.linkedin.com/in/matthieu-roux-317878153/"
+            "https://www.linkedin.com/in/matthieu-roux-317878153/",
+            theme
           )}
-          {Button("Github", "https://github.com/M4TTRX")}
-          {Button("Email", "mailto:matthieurouxleoncini@gmail.com")}
+          {Button("Github", "https://github.com/M4TTRX", theme)}
+          {Button("Email", "mailto:matthieurouxleoncini@gmail.com", theme)}
           {DownloadButton(
             "Resume PDF",
             process.env.PUBLIC_URL + "/resume/resume-en.pdf"

@@ -1,7 +1,6 @@
 import React from "react";
-import "./button.scss";
 
-function Button(content, url) {
+function Button(content, url, theme) {
   return (
     <div>
       <a href={url}>
