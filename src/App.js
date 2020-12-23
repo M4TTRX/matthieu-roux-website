@@ -1,28 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
+import { ThemeProvider } from "styled-components";
 import CoverPicture from "./components/coverPicture/coverPicture";
 import Button from "./components/button/button";
 import DownloadButton from "./components/button/downloadButton";
+import { GlobalStyles } from "./resources/theme/global";
+import { lightTheme, darkTheme } from "./resources/theme/theme";
+import ThemeToggleIcon from "./resources/icons/themeToggleIcon";
 
 function App() {
-  const bannerSection = createBannerSection();
+  var userPreferredTheme = "light";
+
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    userPreferredTheme = "dark";
+  }
+
+  const [theme, setTheme] = useState(userPreferredTheme);
+
+  // The function that toggles between themes
+  const toggleTheme = () => {
+    // if the theme is not light, then set it to dark
+    if (theme === "light") {
+      setTheme("dark");
+      // otherwise, it should be light
+    } else {
+      setTheme("light");
+    }
+  };
+
+  const bannerSection = createBannerSection(theme, toggleTheme);
   const aboutMeSection = createAboutMe();
-  const myProjectsSection = createMyProjectsSection();
+  const myProjectsSection = createMyProjectsSection(theme);
   const myResumeSection = createResumeSection();
   return (
     <div className="App">
-      {bannerSection}
-      {myProjectsSection}
-      {aboutMeSection}
-      {myResumeSection}
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <>
+          <GlobalStyles />
+
+          {bannerSection}
+          {aboutMeSection}
+          {myProjectsSection}
+          {myResumeSection}
+        </>
+      </ThemeProvider>
     </div>
   );
 }
 
-function createBannerSection() {
+function createBannerSection(theme, toggleTheme) {
+  const toggle = ThemeToggleIcon(theme);
   return (
     <div className="banner-wrapper">
       {CoverPicture()}
+      <div className="theme-toggle" onClick={toggleTheme}>
+        {toggle}
+      </div>
       <div className="padded-div">
         <header className="title">
           Matthieu <br /> Roux{" "}
@@ -30,10 +63,11 @@ function createBannerSection() {
         <div className="flex-row">
           {Button(
             "LinkedIn",
-            "https://www.linkedin.com/in/matthieu-roux-317878153/"
+            "https://www.linkedin.com/in/matthieu-roux-317878153/",
+            theme
           )}
-          {Button("Github", "https://github.com/M4TTRX")}
-          {Button("Email", "mailto:matthieurouxleoncini@gmail.com")}
+          {Button("Github", "https://github.com/M4TTRX", theme)}
+          {Button("Email", "mailto:matthieurouxleoncini@gmail.com", theme)}
           {DownloadButton(
             "Resume PDF",
             process.env.PUBLIC_URL + "/resume/resume-en.pdf"

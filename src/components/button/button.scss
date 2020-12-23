@@ -10,10 +10,10 @@ $background-light: #ece8e1;
   display: inline-block;
   text-align: center;
   transition: 0.5s;
-  color: $body-light;
+  // color: $body-light;
   background-color: $background-light;
   &:hover {
-    color: $background-light;
+    // color: $background-light;
     box-shadow: inset 300px 0 1px 0 $body-light;
   }
 }
