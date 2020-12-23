@@ -1,0 +1,40 @@
+{
+  "about-me": {
+    "header": "About Me",
+    "body": "I am a 21 year old student at Queen's University who's about to finish his degree in Computer Engineering. I was born in Reunion Island, a French Territory in the Indian Ocean, and my father's work has pushed our family to move to Romania, Poland and then Canada. This lifestyle taught me to adapt quickly to unknown environments where sometimes I do not even know the local language."
+  },
+  "resume": {
+    "header": "Resume",
+    "body": " Want to know more about my education adn work experience? Check out my resume below!"
+  },
+  "my-projects": {
+    "header": "About Me",
+    "projects": [
+      {
+        "name": "Spotme",
+        "body": [
+          "Spotme is the social way to track your daily workout. The idea came to me when I was unhappy with the time my friend took to write down his progress when weight lifting with him: it was slow and he could not easily track his progress.",
+          "After learning he wasn't the only person using notebooks and beingunsatisfied with the existing apps that could help them track theirprogress, I decided to take the matter in my own hands and make my ownfitness application, made for people who like to lift weights and keeptrack of their progress.",
+          "The app is still work in progress, but you can check out its github repository."
+        ]
+      },
+      {
+        "name": "Reading Glasses",
+        "body": [
+          "Reading glasses (working title) is a pair of glasses that helps the visually impaired read. On the press of a button, the glasses will say out loud the text that is presented in front of them.",
+          " This is my capstone project therefore I cannot share its repository here yet as it would be a violation of academic integrity."
+        ]
+      },
+      {
+        "name": "StudyQ",
+        "body": [
+          "StudyQ is an app that helped students study more efficiently by generating a set of virtual Qcards when scanning and exam with multiple choice questions. It also allows users to share their Qcard sets and compete with their friends introducing a fun aspect to studying."
+        ]
+      },
+      {
+        "name": "matthieuroux.me",
+        "body": "This personal website was created using React. It has an automatic dark mode, bilingual support, automated deploying and was entirely made by me"
+      }
+    ]
+  }
+}
