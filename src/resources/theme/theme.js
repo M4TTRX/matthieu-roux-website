@@ -1,12 +1,14 @@
 // theme.js
 export const lightTheme = {
-  background: "#ece8e1",
-  header: "#0c1a28",
-  body: "#0f1923",
+  background: "#FFFFFF",
+  title: "#FFFFFF",
+  header: "#2A373C",
+  body: "#2A373C",
 };
 
 export const darkTheme = {
-  background: "#0f1923",
-  header: "#ffe2b0",
-  body: "#ece8e1",
+  background: "#000000",
+  title: "#FFFFFF",
+  header: "#FFFFFF",
+  body: "#F3F5F5",
 };

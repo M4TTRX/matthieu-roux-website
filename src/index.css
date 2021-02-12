@@ -1,41 +1,30 @@
 @font-face {
-  font-family: "Tungsten Bold";
+  font-family: "Futura Medium";
   font-style: normal;
-  src: local("Tungsten-Bold"),
-    url("./resources/fonts/Tungsten-Bold.woff") format("woff");
+  src: local("futura-medium"),
+    url("./resources/fonts/futura-medium.ttf") format("ttf");
 }
 
-@font-face {
-  font-family: "DIN Next Lt Pro Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("DINNextLTPro-Regular"),
-    url("./resources/fonts/DINNextLTPro-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "DIN Next Lt Pro Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("DINNextLTPro-Medium"),
-    url("./resources/fonts/DINNextLTPro-Medium.woff") format("woff");
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 header {
-  font-family: "Tungsten Bold", sans-serif;
+  font-family: "Futura Medium", sans-serif;
+  font-weight: regular;
 }
 
 h1 {
-  font-family: "Tungsten Bold", sans-serif;
+  font-family: "Futura Medium", sans-serif;
+  font-weight: regular;
 }
 
 h2 {
-  font-family: "DIN Next Lt Pro Medium", sans-serif;
+  font-family: "Futura Medium", sans-serif;
+  font-weight: regular;
 }
 
 body {
   margin: 0;
-  font-family: "DIN Next Lt Pro Regular";
+  font-family: "Roboto";
   font-weight: regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

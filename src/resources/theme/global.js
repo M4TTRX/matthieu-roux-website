@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.header};
   }
   .title {
-    color: ${({ theme }) => theme.header};
+    color: ${({ theme }) => theme.title};
   }
 
   // Button themes

@@ -8,6 +8,7 @@ $background-dark: #0c1a28;
 $header-dark: #ece8e1;
 $body-dark: #ece8e1;
 
+$main: #ff824a;
 /* Main layout elements */
 .App {
   text-align: start;
@@ -31,7 +32,7 @@ $body-dark: #ece8e1;
 }
 .banner-wrapper {
   position: relative;
-  height: calc(200px + 20vmax);
+  height: 100vh;
 }
 
 /* Title */
@@ -43,11 +44,17 @@ $body-dark: #ece8e1;
   flex-direction: column;
   justify-content: left;
   line-height: 75%;
-  font-size: calc(4em + 10vmin);
+  font-size: 48pt;
   color: $header-light;
   margin-bottom: 5vmin;
   margin-top: 5vmin;
   letter-spacing: 0.1rem;
+  padding-bottom: 10px;
+  line-height: 110%;
+
+  // Underline
+  text-decoration: underline;
+  text-decoration-color: $main;
 }
 
 /* Theme Toggle */
@@ -73,8 +80,11 @@ $body-dark: #ece8e1;
   max-height: 0vh;
   display: flex;
   justify-content: center;
-  font-size: calc(56pt + 1vmin);
-  letter-spacing: 0.1em;
+  font-size: 36pt;
+  text-decoration: underline;
+  text-decoration-color: $main;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Basics formatting */
