@@ -4,6 +4,8 @@ import { ThemeProvider } from "styled-components";
 import CoverPicture from "./components/coverPicture/coverPicture";
 import Button from "./components/button/button";
 import DownloadButton from "./components/button/downloadButton";
+import CoverDownloadButton from "./components/button/coverDownloadButton";
+import CoverButton from "./components/button/coverButton";
 import { GlobalStyles } from "./resources/theme/global";
 import { lightTheme, darkTheme } from "./resources/theme/theme";
 import ThemeToggleIcon from "./resources/icons/themeToggleIcon";
@@ -54,21 +56,21 @@ function createBannerSection(theme, toggleTheme) {
     <div className="banner-wrapper">
       {CoverPicture()}
       <div className="theme-toggle" onClick={toggleTheme}>
-        {toggle}
+        Set {theme} mode {toggle}
       </div>
-      <div className="padded-div">
+      <div className="cover-padded-div">
         <header className="title">
           Matthieu <br /> Roux{" "}
         </header>
         <div className="flex-row">
-          {Button(
+          {CoverButton(
             "LinkedIn",
             "https://www.linkedin.com/in/matthieu-roux-317878153/",
             theme
           )}
-          {Button("Github", "https://github.com/M4TTRX", theme)}
-          {Button("Email", "mailto:matthieurouxleoncini@gmail.com", theme)}
-          {DownloadButton(
+          {CoverButton("Github", "https://github.com/M4TTRX", theme)}
+          {CoverButton("Email", "mailto:matthieurouxleoncini@gmail.com", theme)}
+          {CoverDownloadButton(
             "Resume PDF",
             process.env.PUBLIC_URL + "/resume/resume-en.pdf"
           )}

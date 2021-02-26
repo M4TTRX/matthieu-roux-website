@@ -1,5 +1,6 @@
 $body-light: #0f1923;
-$background-light: #ece8e1;
+$background-light: white;
+$main-color: #ff824a;
 
 .project-card-button {
   border: 1px solid $body-light;
@@ -15,5 +16,20 @@ $background-light: #ece8e1;
   &:hover {
     // color: $background-light;
     box-shadow: inset 300px 0 1px 0 $body-light;
+  }
+}
+.project-card-cover-button {
+  border: 1px solid $background-light;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  color: $background-light;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  &:hover {
+    border: 1px solid $main-color;
+    box-shadow: 0px 0px 10px 0.5px rgba(255, 130, 74, 0.54);
   }
 }

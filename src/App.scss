@@ -1,12 +1,12 @@
 // Global Variables
 
 $background-light: #ece8e1;
-$header-light: #0c1a28;
-$body-light: #0f1923;
+$header-light: black;
+$body-light: black;
 
-$background-dark: #0c1a28;
-$header-dark: #ece8e1;
-$body-dark: #ece8e1;
+$background-dark: black;
+$header-dark: white;
+$body-dark: white;
 
 $main: #ff824a;
 /* Main layout elements */
@@ -16,10 +16,17 @@ $main: #ff824a;
   flex-direction: column;
   padding-bottom: 150px;
 }
-.padded-div {
-  margin-top: calc(15pt + 2vmin);
+.cover-padded-div {
   margin-right: calc(8pt + 8vmin);
   margin-left: calc(8pt + 8vmin);
+  padding-bottom: 20;
+  position: absolute;
+  bottom: 30pt;
+}
+.padded-div {
+  margin-right: calc(8pt + 8vmin);
+  margin-left: calc(8pt + 8vmin);
+  padding-bottom: 20;
   position: relative;
 }
 .flex-row {
@@ -27,8 +34,7 @@ $main: #ff824a;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100%;
-  max-width: 70%;
+  max-width: 100%;
 }
 .banner-wrapper {
   position: relative;
@@ -39,7 +45,6 @@ $main: #ff824a;
 
 .title {
   z-index: 10;
-  min-height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -49,7 +54,6 @@ $main: #ff824a;
   margin-bottom: 5vmin;
   margin-top: 5vmin;
   letter-spacing: 0.1rem;
-  padding-bottom: 10px;
   line-height: 110%;
 
   // Underline
