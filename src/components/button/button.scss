@@ -2,31 +2,18 @@ $body-light: #0f1923;
 $background-light: white;
 $main-color: #ff824a;
 
-.project-card-button {
-  border: 1px solid $body-light;
-  position: relative;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-right: 10px;
-  display: inline-block;
-  text-align: center;
-  transition: 0.5s;
-  // color: $body-light;
-  background-color: $background-light;
-  &:hover {
-    // color: $background-light;
-    box-shadow: inset 300px 0 1px 0 $body-light;
-  }
-}
 .project-card-cover-button {
-  border: 1px solid $background-light;
   position: relative;
   flex-wrap: wrap;
-  padding: 10px;
-  margin-right: 10px;
   display: inline-block;
-  color: $background-light;
   text-align: center;
+
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  border: 1px solid $background-light;
+  color: $background-light;
   background-color: hsla(0, 0%, 0%, 0.4);
   &:hover {
     border: 1px solid $main-color;

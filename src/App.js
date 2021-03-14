@@ -41,9 +41,11 @@ function App() {
           <GlobalStyles />
 
           {bannerSection}
-          {aboutMeSection}
-          {myProjectsSection}
-          {myResumeSection}
+          <div className="content">
+            {aboutMeSection}
+            {myProjectsSection}
+            {myResumeSection}
+          </div>
         </>
       </ThemeProvider>
     </div>
@@ -53,27 +55,35 @@ function App() {
 function createBannerSection(theme, toggleTheme) {
   const toggle = ThemeToggleIcon(theme);
   return (
-    <div className="banner-wrapper">
-      {CoverPicture()}
-      <div className="theme-toggle" onClick={toggleTheme}>
-        Set {theme} mode {toggle}
-      </div>
-      <div className="cover-padded-div">
-        <header className="title">
-          Matthieu <br /> Roux{" "}
-        </header>
-        <div className="flex-row">
-          {CoverButton(
-            "LinkedIn",
-            "https://www.linkedin.com/in/matthieu-roux-317878153/",
-            theme
-          )}
-          {CoverButton("Github", "https://github.com/M4TTRX", theme)}
-          {CoverButton("Email", "mailto:matthieurouxleoncini@gmail.com", theme)}
-          {CoverDownloadButton(
-            "Resume PDF",
-            process.env.PUBLIC_URL + "/resume/resume-en.pdf"
-          )}
+    <div>
+      <div className="banner-wrapper">{CoverPicture()}</div>
+
+      {/* theme toggling is hidden for now */}
+      {/* <div className="theme-toggle" onClick={toggleTheme}></div>
+      Set {theme} mode {toggle} */}
+
+      <div className="content">
+        <div className="title-section">
+          <header className="title">
+            Matthieu <br /> Roux{" "}
+          </header>
+          <div className="flex-row">
+            {CoverButton(
+              "LinkedIn",
+              "https://www.linkedin.com/in/matthieu-roux-317878153/",
+              theme
+            )}
+            {CoverButton("Github", "https://github.com/M4TTRX", theme)}
+            {CoverButton(
+              "Email",
+              "mailto:matthieurouxleoncini@gmail.com",
+              theme
+            )}
+            {CoverDownloadButton(
+              "Resume PDF",
+              process.env.PUBLIC_URL + "/resume/resume-en.pdf"
+            )}
+          </div>
         </div>
       </div>
     </div>

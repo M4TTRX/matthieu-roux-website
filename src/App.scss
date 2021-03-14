@@ -9,6 +9,9 @@ $header-dark: white;
 $body-dark: white;
 
 $main: #ff824a;
+
+$max-width: 1124px;
+
 /* Main layout elements */
 .App {
   text-align: start;
@@ -16,16 +19,20 @@ $main: #ff824a;
   flex-direction: column;
   padding-bottom: 150px;
 }
-.cover-padded-div {
-  margin-right: calc(8pt + 8vmin);
-  margin-left: calc(8pt + 8vmin);
+.content {
+  max-width: $max-width;
+  padding: 25px 30px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title-section {
   padding-bottom: 20;
   position: absolute;
+  padding-top: 25px;
   bottom: 30pt;
 }
 .padded-div {
-  margin-right: calc(8pt + 8vmin);
-  margin-left: calc(8pt + 8vmin);
+  padding-top: 25px;
   padding-bottom: 20;
   position: relative;
 }
