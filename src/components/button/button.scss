@@ -12,11 +12,13 @@ $main-color: #ff824a;
   margin-bottom: 10px;
   margin-right: 10px;
 
-  border: 1px solid $background-light;
+  border: 2px solid $background-light;
   color: $background-light;
   background-color: hsla(0, 0%, 0%, 0.4);
+
+  border-radius: 2px;
   &:hover {
-    border: 1px solid $main-color;
+    border: 2px solid $main-color;
     box-shadow: 0px 0px 10px 0.5px rgba(255, 130, 74, 0.54);
   }
 }

@@ -20,8 +20,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   // Button themes
+
   .project-card-button {
-    border: 1px solid ${({ theme }) => theme.body};
+    border: 2px solid ${({ theme }) => theme.body};
     position: relative;
     flex-wrap: wrap;
 
@@ -31,8 +32,10 @@ export const GlobalStyles = createGlobalStyle`
     display: inline-block;
     text-align: center;
     color: ${({ theme }) => theme.body};
+
+    border-radius: 2px;
     &:hover {
-        border: 1px solid ${({ theme }) => theme.mainColor};
+        border: 2px solid ${({ theme }) => theme.mainColor};
         box-shadow: 0px 0px 10px 0.5px rgba(255, 130, 74, 0.54);
     }
   `;

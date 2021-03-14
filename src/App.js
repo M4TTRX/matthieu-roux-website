@@ -68,21 +68,16 @@ function createBannerSection(theme, toggleTheme) {
             Matthieu <br /> Roux{" "}
           </header>
           <div className="flex-row">
-            {CoverButton(
-              "LinkedIn",
-              "https://www.linkedin.com/in/matthieu-roux-317878153/",
-              theme
-            )}
-            {CoverButton("Github", "https://github.com/M4TTRX", theme)}
-            {CoverButton(
-              "Email",
-              "mailto:matthieurouxleoncini@gmail.com",
-              theme
-            )}
             {CoverDownloadButton(
-              "Resume PDF",
+              "Resume",
               process.env.PUBLIC_URL + "/resume/resume-en.pdf"
             )}
+            {CoverButton(
+              "LinkedIn",
+              "https://www.linkedin.com/in/matthieu-roux-317878153/"
+            )}
+            {CoverButton("Email", "mailto:matthieurouxleoncini@gmail.com")}
+            {CoverButton("Github", "https://github.com/M4TTRX")}
           </div>
         </div>
       </div>
@@ -160,7 +155,7 @@ function createResumeSection() {
         resume below!
       </p>
       {DownloadButton(
-        "Resume PDF",
+        "Resume",
         process.env.PUBLIC_URL + "/resume/resume-en.pdf"
       )}
     </div>

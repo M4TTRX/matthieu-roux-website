@@ -1,6 +1,6 @@
 import React from "react";
 
-function CoverButton(content, url, theme) {
+function CoverButton(content, url) {
   return (
     <div>
       <a href={url}>
