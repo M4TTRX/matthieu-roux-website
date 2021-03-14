@@ -5,26 +5,26 @@
     url("./resources/fonts/futura-medium.ttf") format("ttf");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@800&display=swap");
 
 header {
-  font-family: "Futura Medium", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: regular;
 }
 
 h1 {
-  font-family: "Futura Medium", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: regular;
 }
 
 h2 {
-  font-family: "Futura Medium", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: regular;
 }
 
 body {
   margin: 0;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: regular;
   font-size: 19px;
   -webkit-font-smoothing: antialiased;
