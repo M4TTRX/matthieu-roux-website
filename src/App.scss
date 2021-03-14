@@ -69,18 +69,19 @@ $max-width: 1124px;
 }
 
 /* Theme Toggle */
+.top-bar {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
 
 .theme-toggle {
-  position: relative;
+  color: white;
   float: right;
-  width: 24;
-  z-index: 99;
-  height: 24;
   padding: 10px;
-  &:hover {
-    width: 28;
-    height: 28;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Headers  */

@@ -56,12 +56,12 @@ function createBannerSection(theme, toggleTheme) {
   const toggle = ThemeToggleIcon(theme);
   return (
     <div>
+      <div className="top-bar">
+        <div className="theme-toggle" onClick={toggleTheme}>
+          Use {theme === "light" ? "Dark" : "Light"} mode{toggle}
+        </div>
+      </div>
       <div className="banner-wrapper">{CoverPicture()}</div>
-
-      {/* theme toggling is hidden for now */}
-      {/* <div className="theme-toggle" onClick={toggleTheme}></div>
-      Set {theme} mode {toggle} */}
-
       <div className="content">
         <div className="title-section">
           <header className="title">
