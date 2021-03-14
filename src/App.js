@@ -3,6 +3,7 @@ import "./App.scss";
 import { ThemeProvider } from "styled-components";
 import CoverPicture from "./components/coverPicture/coverPicture";
 import Button from "./components/button/button";
+import PortfolioItem from "./components/portfolioItem/portfolioItem";
 import DownloadButton from "./components/button/downloadButton";
 import CoverDownloadButton from "./components/button/coverDownloadButton";
 import CoverButton from "./components/button/coverButton";
@@ -101,29 +102,35 @@ function createAboutMe() {
   );
 }
 
-function createMyProjectsSection() {
+function createMyProjectsSection(theme) {
+  const studyQProject = {
+    title: "StudyQ",
+    description:
+      "StudyQ was an app that allowed the creation of virtual Qcards by scanning MCQ exams. It also allowed users to share their Qcard sets and compete with their friends",
+    url: "https://github.com/M4TTRX/studyq",
+  };
+  const spotMeProject = {
+    title: "Spotme",
+    description: [
+      `Spotme is the social way to track your daily workout. 
+      The idea came to me when I was unhappy with the time my friend 
+      took to write down his progress when weight lifting with him: it 
+      was slow and he could not easily track his progress.`,
+      `After learning he wasn't the only person using notebooks and 
+      being unsatisfied with the existing apps that could help them 
+      track their progress, I decided to take the matter in my own 
+      hands and make my own fitness application, made for people who 
+      like to lift weights and keep track of their progress.`,
+      `The app is still work in progress, but you can check out 
+      its github repository.`,
+    ],
+    url: "https://github.com/M4TTRX/spotme",
+  };
   return (
     <div className="padded-div">
       <h1 className="h1">Portfolio</h1>
-      <h2> Spotme</h2>
-      <p>
-        Spotme is the social way to track your daily workout. The idea came to
-        me when I was unhappy with the time my friend took to write down his
-        progress when weight lifting with him: it was slow and he could not
-        easily track his progress.
-      </p>
-      <p>
-        After learning he wasn't the only person using notebooks and being
-        unsatisfied with the existing apps that could help them track their
-        progress, I decided to take the matter in my own hands and make my own
-        fitness application, made for people who like to lift weights and keep
-        track of their progress.
-      </p>
-      <p>
-        The app is still work in progress, but you can check out its github
-        repository.
-      </p>
-      {Button("Github Repository", "https://github.com/M4TTRX/spotme")}
+      {PortfolioItem(spotMeProject, theme)}
+
       <h2> Reading Glasses</h2>
       <p>
         Reading glasses (working title) is a pair of glasses that helps the
