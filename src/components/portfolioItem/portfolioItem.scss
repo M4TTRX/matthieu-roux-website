@@ -26,6 +26,7 @@ p{
 // Description
 .porfolio-item-description {
   padding-bottom: 20px;
+  padding-right: 20px;  
   flex: 1 1 20em; // flex-grow, flex-shrink, flex-basis
 }
 
@@ -43,5 +44,4 @@ img.porfolioImg {
     object-fit: contain;
     height: 100%;
     width: 100%;
-    border-radius: 15px;
   }

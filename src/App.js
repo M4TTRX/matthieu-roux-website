@@ -137,6 +137,7 @@ function createMyProjectsSection(theme) {
       ` This is my capstone project therefore I cannot share its repository here
       yet as it would be a violation of academic integrity.`,
     ],
+    imgName: "reading-glasses",
   };
   return (
     <div className="padded-div">
