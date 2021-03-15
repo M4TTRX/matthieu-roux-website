@@ -108,6 +108,7 @@ function createMyProjectsSection(theme) {
     description:
       "StudyQ was an app that allowed the creation of virtual Qcards by scanning MCQ exams. It also allowed users to share their Qcard sets and compete with their friends",
     url: "https://github.com/M4TTRX/studyq",
+    imgName: "",
   };
   const spotMeProject = {
     title: "Spotme",
@@ -125,6 +126,7 @@ function createMyProjectsSection(theme) {
       its github repository.`,
     ],
     url: "https://github.com/M4TTRX/spotme",
+    imgName: "spotme",
   };
   return (
     <div className="padded-div">

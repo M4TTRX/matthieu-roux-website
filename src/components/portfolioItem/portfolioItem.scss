@@ -2,26 +2,40 @@ $main: #ff824a;
 $description-max-width: 600px;
 $img-max-width: 320px;
 
+.paragraph {
+  margin-top:0;
+}
+h2{
+  margin: 30px 0px 0px 0px;
+}
+
+// Body
 .flex-row {
 //   justify-content: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row-reverse wrap;
   max-width: 100%;
   justify-content:space-between;
   align-content: space-between;
-}
-.porfolio-item-description {
-  padding-right: calc(10px + 3%);
-  max-width: $description-max-width;
-  min-width: 250px;
-  padding-bottom: 20px
+  margin-top: 30px;
 }
 
+// Description
+.porfolio-item-description {
+  padding-right: calc(10px + 3%);
+  min-width: 250px;
+  padding-bottom: 20px;
+  flex: 1 1 20em; // flex-grow, flex-shrink, flex-basis
+}
+
+// Image
 .portfolio-image-container {
-  max-width: $img-max-width;
   min-width: 250px;
   justify-content: center;
   filter: drop-shadow(0px 0px 10px rgba(42, 55, 60, 0.3));
+  flex: 5 5 1em; // flex-grow, flex-shrink, flex-basis
+  max-height: 500px;
+  margin-bottom: 10px;
 }
 
 img.porfolioImg {
