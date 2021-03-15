@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.scss";
 import { ThemeProvider } from "styled-components";
 import CoverPicture from "./components/coverPicture/coverPicture";
-import Button from "./components/button/button";
 import PortfolioItem from "./components/portfolioItem/portfolioItem";
 import DownloadButton from "./components/button/downloadButton";
 import CoverDownloadButton from "./components/button/coverDownloadButton";
@@ -105,10 +104,11 @@ function createAboutMe() {
 function createMyProjectsSection(theme) {
   const studyQProject = {
     title: "StudyQ",
-    description:
+    description: [
       "StudyQ was an app that allowed the creation of virtual Qcards by scanning MCQ exams. It also allowed users to share their Qcard sets and compete with their friends",
+    ],
     url: "https://github.com/M4TTRX/studyq",
-    imgName: "",
+    imgName: "studyQ",
   };
   const spotMeProject = {
     title: "Spotme",
@@ -128,29 +128,22 @@ function createMyProjectsSection(theme) {
     url: "https://github.com/M4TTRX/spotme",
     imgName: "spotme",
   };
+  const readingGlassesProject = {
+    title: "Reading Glasses",
+    description: [
+      ` Reading glasses (working title) is a pair of glasses that helps the
+      visually impaired read. On the press of a button, the glasses will say
+      out loud the text that is presented in front of them.`,
+      ` This is my capstone project therefore I cannot share its repository here
+      yet as it would be a violation of academic integrity.`,
+    ],
+  };
   return (
     <div className="padded-div">
       <h1 className="h1">Portfolio</h1>
       {PortfolioItem(spotMeProject, theme)}
-
-      <h2> Reading Glasses</h2>
-      <p>
-        Reading glasses (working title) is a pair of glasses that helps the
-        visually impaired read. On the press of a button, the glasses will say
-        out loud the text that is presented in front of them.
-      </p>
-      <p>
-        This is my capstone project therefore I cannot share its repository here
-        yet as it would be a violation of academic integrity.
-      </p>
-      <h2>StudyQ</h2>
-      <p>
-        StudyQ is an app that helped students study more efficiently by
-        generating a set of virtual Qcards when scanning and exam with multiple
-        choice questions. It also allows users to share their Qcard sets and
-        compete with their friends introducing a fun aspect to studying.
-      </p>
-      {Button("Github Repository", "https://github.com/M4TTRX/studyq")}
+      {PortfolioItem(readingGlassesProject, theme)}
+      {PortfolioItem(studyQProject, theme)}
     </div>
   );
 }

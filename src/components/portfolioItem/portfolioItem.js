@@ -9,11 +9,14 @@ function PortfolioItem(project, theme) {
     description.push(<p>{paragraph}</p>);
   }
   let img = <div></div>;
-  if (project.imgName !== undefined) {
+  if (project.imgName) {
     img = (
       <div className="portfolio-image-container">{image(project.imgName)}</div>
     );
   }
+
+  const button = project.url ? Button("View Code", project.url) : <div></div>;
+
   return (
     <div className="project-card">
       <h2>{project.title}</h2>
@@ -21,7 +24,7 @@ function PortfolioItem(project, theme) {
         {img}
         <div className="porfolio-item-description">
           {description}
-          {Button("View Code", project.url)}
+          {button}
         </div>
       </div>
     </div>
