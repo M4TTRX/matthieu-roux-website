@@ -67,7 +67,7 @@ function createBannerSection(theme, toggleTheme) {
           <header className="title">
             Matthieu <br /> Roux{" "}
           </header>
-          <div className="flex-row">
+          <div className="cover-button-row">
             {CoverDownloadButton(
               "Resume",
               process.env.PUBLIC_URL + "/resume/resume-en.pdf"

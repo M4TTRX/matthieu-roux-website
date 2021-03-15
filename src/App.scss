@@ -36,11 +36,10 @@ $max-width: 1124px;
   padding-bottom: 20;
   position: relative;
 }
-.flex-row {
-  justify-content: right;
+.cover-button-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: left;
+  flex-flow: row wrap;
   max-width: 100%;
 }
 .banner-wrapper {

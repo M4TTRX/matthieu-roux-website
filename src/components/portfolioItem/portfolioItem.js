@@ -20,7 +20,7 @@ function PortfolioItem(project, theme) {
   return (
     <div className="project-card">
       <h2>{project.title}</h2>
-      <div className="flex-row">
+      <div className="portfolio-flex-row">
         {img}
         <div className="porfolio-item-description">
           {description}
