@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c6bdeb144d3cb99fc9eaa256f071d61",
+    "revision": "92247c5a834ca3f02c5863570648a2aa",
     "url": "/index.html"
   },
   {
-    "revision": "0311ac7b72d7aca90119",
-    "url": "/static/css/main.baa4bf65.chunk.css"
+    "revision": "d9a09ca570175aa6248c",
+    "url": "/static/css/main.d456de0a.chunk.css"
   },
   {
-    "revision": "a4ac2d9f328a10bac3f0",
-    "url": "/static/js/2.7ec5478f.chunk.js"
+    "revision": "91ac4c982d8eb0e35ee7",
+    "url": "/static/js/2.084d35f1.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/static/js/2.7ec5478f.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.084d35f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0311ac7b72d7aca90119",
-    "url": "/static/js/main.e0b7dede.chunk.js"
+    "revision": "d9a09ca570175aa6248c",
+    "url": "/static/js/main.4e84fe48.chunk.js"
   },
   {
     "revision": "eff5ec52d67d6f606079",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/matthieu-roux-profile.f1bc5ecc.jpg"
   },
   {
-    "revision": "7f4dcd00c0d20307a22a0787eecb7b5c",
-    "url": "/static/media/reading-glasses.7f4dcd00.jpg"
+    "revision": "5f29131dd44da3ab7381c1e01164f5b2",
+    "url": "/static/media/reading-glasses.5f29131d.jpg"
   },
   {
     "revision": "211fee2244221795bef39dbe2ef60f1a",
