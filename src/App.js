@@ -134,10 +134,12 @@ function createMyProjectsSection(theme) {
       ` Reading glasses (working title) is a pair of glasses that helps the
       visually impaired read. On the press of a button, the glasses will say
       out loud the text that is presented in front of them.`,
-      ` This is my capstone project therefore I cannot share its repository here
-      yet as it would be a violation of academic integrity.`,
+      `All the processing is done on the glasses, without the need of a phone, 
+      more information on their functioning coming soon, but for now you can always 
+      check out the repository.`,
     ],
     imgName: "reading-glasses",
+    url: "https://github.com/M4TTRX/reading-glasses",
   };
   return (
     <div className="padded-div">
