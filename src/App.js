@@ -12,31 +12,53 @@ import ThemeToggleIcon from "./resources/icons/themeToggleIcon";
 
 function App() {
   var userPreferredTheme = "light";
+  var userPreferredLanguage = "English";
 
+  // Set the default theme based on the user's system theme
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     userPreferredTheme = "dark";
   }
 
-  const [theme, setTheme] = useState(userPreferredTheme);
+  // Import languages
+  const en = require("./resources/lang/en.json");
 
-  // The function that toggles between themes
-  const toggleTheme = () => {
-    // if the theme is not light, then set it to dark
-    if (theme === "light") {
-      setTheme("dark");
+  var userPreferences = {
+    theme: userPreferredTheme,
+    language: userPreferredLanguage,
+  };
+  // User Preferences
+  const [preferences, setPreferences] = useState(userPreferences);
+
+  // Set the content based on the proper language
+  var content = en;
+
+  // Function that updates preferences
+  const togglePreferences = () => {
+    // Toggle
+    if (preferences.theme === "light") {
+      setPreferences({ theme: "dark", language: preferences.language });
       // otherwise, it should be light
     } else {
-      setTheme("light");
+      setPreferences({ theme: "dark", language: preferences.language });
     }
   };
 
-  const bannerSection = createBannerSection(theme, toggleTheme);
-  const aboutMeSection = createAboutMe();
-  const myProjectsSection = createMyProjectsSection(theme);
-  const myResumeSection = createResumeSection();
+  const bannerSection = createBannerSection(
+    content.bannerSection,
+    preferences.theme,
+    togglePreferences
+  );
+  const aboutMeSection = createAboutMe(content.aboutMeSection);
+  const myProjectsSection = createMyProjectsSection(
+    content.myProjectsSection,
+    preferences.theme
+  );
+  const myResumeSection = createResumeSection(content.resumeSection);
   return (
     <div className="App">
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <ThemeProvider
+        theme={preferences.theme === "light" ? lightTheme : darkTheme}
+      >
         <>
           <GlobalStyles />
 
@@ -52,16 +74,17 @@ function App() {
   );
 }
 
-function createBannerSection(theme, toggleTheme) {
+function createBannerSection(content, theme, togglePreferences) {
   const toggle = ThemeToggleIcon(theme);
   return (
     <div>
       <div className="top-bar">
-        <div className="theme-toggle" onClick={toggleTheme}>
+        <div className="theme-toggle" onClick={togglePreferences}>
           Use {theme === "light" ? "Dark" : "Light"} mode{toggle}
         </div>
       </div>
       <div className="banner-wrapper">{CoverPicture()}</div>
+
       <div className="content">
         <div className="title-section">
           <header className="title">
@@ -69,15 +92,15 @@ function createBannerSection(theme, toggleTheme) {
           </header>
           <div className="cover-button-row">
             {CoverDownloadButton(
-              "Resume",
-              process.env.PUBLIC_URL + "/resume/resume-en.pdf"
+              content.resumeButton.label,
+              process.env.PUBLIC_URL + content.resumeButton.url
             )}
             {CoverButton(
-              "LinkedIn",
-              "https://www.linkedin.com/in/matthieu-roux-317878153/"
+              content.linkedInButton.label,
+              content.linkedInButton.url
             )}
-            {CoverButton("Email", "mailto:matthieurouxleoncini@gmail.com")}
-            {CoverButton("Github", "https://github.com/M4TTRX")}
+            {CoverButton(content.emailButton.label, content.emailButton.url)}
+            {CoverButton(content.githubButton.label, content.githubButton.url)}
           </div>
         </div>
       </div>
@@ -85,83 +108,36 @@ function createBannerSection(theme, toggleTheme) {
   );
 }
 
-function createAboutMe() {
+function createAboutMe(content) {
   return (
     <div className="padded-div">
-      <h1 className="h1">About Me</h1>
-      <p>
-        I am a 21 year old student at Queen's University who's about to finish
-        his degree in Computer Engineering. I was born in Reunion Island, a
-        French Territory in the Indian Ocean, and my father's work has pushed
-        our family to move to Romania, Poland and then Canada. This lifestyle
-        taught me to adapt quickly to unknown environments where sometimes I do
-        not even know the local language.
-      </p>
+      <h1 className="h1">{content.h1}</h1>
+      <p>{content.body}</p>
     </div>
   );
 }
 
-function createMyProjectsSection(theme) {
-  const studyQProject = {
-    title: "StudyQ",
-    description: [
-      "StudyQ was an app that allowed the creation of virtual Qcards by scanning MCQ exams. It also allowed users to share their Qcard sets and compete with their friends",
-    ],
-    url: "https://github.com/M4TTRX/studyq",
-    imgName: "studyQ",
-  };
-  const spotMeProject = {
-    title: "Spotme",
-    description: [
-      `Spotme is the social way to track your daily workout. 
-      The idea came to me when I was unhappy with the time my friend 
-      took to write down his progress when weight lifting with him: it 
-      was slow and he could not easily track his progress.`,
-      `After learning he wasn't the only person using notebooks and 
-      being unsatisfied with the existing apps that could help them 
-      track their progress, I decided to take the matter in my own 
-      hands and make my own fitness application, made for people who 
-      like to lift weights and keep track of their progress.`,
-      `The app is still work in progress, but you can check out 
-      its github repository.`,
-    ],
-    url: "https://github.com/M4TTRX/spotme",
-    imgName: "spotme",
-  };
-  const readingGlassesProject = {
-    title: "Reading Glasses",
-    description: [
-      ` Reading glasses (working title) is a pair of glasses that helps the
-      visually impaired read. On the press of a button, the glasses will say
-      out loud the text that is presented in front of them.`,
-      `All the processing is done on the glasses, without the need of a phone, 
-      more information on their functioning coming soon, but for now you can always 
-      check out the repository.`,
-    ],
-    imgName: "reading-glasses",
-    url: "https://github.com/M4TTRX/reading-glasses",
-  };
+function createMyProjectsSection(content, theme) {
+  var projects = [];
+  for (let project of content.projects) {
+    projects.push(PortfolioItem(project, theme));
+  }
   return (
     <div className="padded-div">
-      <h1 className="h1">Portfolio</h1>
-      {PortfolioItem(spotMeProject, theme)}
-      {PortfolioItem(readingGlassesProject, theme)}
-      {PortfolioItem(studyQProject, theme)}
+      <h1 className="h1">{content.h1}</h1>
+      {projects}
     </div>
   );
 }
 
-function createResumeSection() {
+function createResumeSection(content) {
   return (
     <div className="padded-div">
-      <h1 className="h1">Resume</h1>
-      <p>
-        Want to know more about my education and work experience? Check out my
-        resume below!
-      </p>
+      <h1 className="h1">{content.h1}</h1>
+      <p>{content.body}</p>
       {DownloadButton(
-        "Resume",
-        process.env.PUBLIC_URL + "/resume/resume-en.pdf"
+        content.button.label,
+        process.env.PUBLIC_URL + content.button.url
       )}
     </div>
   );
