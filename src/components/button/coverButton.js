@@ -1,18 +1,18 @@
 import React from "react";
+import { Div, Button, Icon } from "atomize";
 
 function CoverButton(content, url) {
   return (
-    <div>
-      <a href={url}>
-        <div
-          className="project-card-cover-button"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          {content}
-        </div>
-      </a>
-    </div>
+    <Button
+      suffix={
+        <Icon name="LongRight" size="16px" color="white" m={{ l: "1rem" }} />
+      }
+      shadow="3"
+      hoverShadow="4"
+      m={{ r: "1rem" }}
+    >
+      <a href={url}>{content}</a>
+    </Button>
   );
 }
 
