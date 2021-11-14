@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.c07bc19c.chunk.css",
-    "main.js": "/static/js/main.c09cb7f4.chunk.js",
-    "main.js.map": "/static/js/main.c09cb7f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e181a14c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e181a14c.js.map",
-    "static/js/2.1535fcc1.chunk.js": "/static/js/2.1535fcc1.chunk.js",
-    "static/js/2.1535fcc1.chunk.js.map": "/static/js/2.1535fcc1.chunk.js.map",
+    "main.css": "/static/css/main.6efc34e1.chunk.css",
+    "main.js": "/static/js/main.14970973.chunk.js",
+    "main.js.map": "/static/js/main.14970973.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a0065866.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a0065866.js.map",
+    "static/js/2.625754ae.chunk.js": "/static/js/2.625754ae.chunk.js",
+    "static/js/2.625754ae.chunk.js.map": "/static/js/2.625754ae.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.98b831f4f29f272dd5a9140643ff1c17.js": "/precache-manifest.98b831f4f29f272dd5a9140643ff1c17.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.c07bc19c.chunk.css.map": "/static/css/main.c07bc19c.chunk.css.map",
-    "static/js/2.1535fcc1.chunk.js.LICENSE.txt": "/static/js/2.1535fcc1.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/futura-medium.9a162627.ttf",
-    "static/media/matthieu-roux-profile.jpg": "/static/media/matthieu-roux-profile.f1bc5ecc.jpg",
-    "static/media/reading-glasses.jpg": "/static/media/reading-glasses.5f29131d.jpg",
-    "static/media/spotme.jpg": "/static/media/spotme.211fee22.jpg",
-    "static/media/studyQ.jpg": "/static/media/studyQ.c64b0394.jpg"
+    "static/css/main.6efc34e1.chunk.css.map": "/static/css/main.6efc34e1.chunk.css.map",
+    "static/js/2.625754ae.chunk.js.LICENSE.txt": "/static/js/2.625754ae.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/futura-medium.71d20cae.ttf",
+    "static/media/matthieu-roux-profile.jpg": "/static/media/matthieu-roux-profile.9857130d.jpg",
+    "static/media/reading-glasses.jpg": "/static/media/reading-glasses.c284437c.jpg",
+    "static/media/spotme.jpg": "/static/media/spotme.32da7c1a.jpg",
+    "static/media/studyQ.jpg": "/static/media/studyQ.85c479b4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e181a14c.js",
-    "static/js/2.1535fcc1.chunk.js",
-    "static/css/main.c07bc19c.chunk.css",
-    "static/js/main.c09cb7f4.chunk.js"
+    "static/js/runtime-main.a0065866.js",
+    "static/js/2.625754ae.chunk.js",
+    "static/css/main.6efc34e1.chunk.css",
+    "static/js/main.14970973.chunk.js"
   ]
 }
