@@ -9,15 +9,16 @@ import CoverButton from "./components/button/coverButton";
 import { GlobalStyles } from "./resources/theme/global";
 import { lightTheme, darkTheme } from "./resources/theme/theme";
 import ThemeToggleIcon from "./resources/icons/themeToggleIcon";
+import IconURL from "./components/iconURL/iconURL";
 
 function App() {
   var userPreferredTheme = "light";
   var userPreferredLanguage = "English";
 
   // Set the default theme based on the user's system theme
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    userPreferredTheme = "dark";
-  }
+  // if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  //   userPreferredTheme = "dark";
+  // }
 
   // Import languages
   const en = require("./resources/lang/en.json");
@@ -63,11 +64,7 @@ function App() {
           <GlobalStyles />
 
           {bannerSection}
-          <div className="content">
-            {aboutMeSection}
-            {myProjectsSection}
-            {myResumeSection}
-          </div>
+          <div className="content"></div>
         </>
       </ThemeProvider>
     </div>
@@ -78,12 +75,7 @@ function createBannerSection(content, theme, togglePreferences) {
   const toggle = ThemeToggleIcon(theme);
   return (
     <div>
-      <div className="top-bar">
-        <div className="theme-toggle" onClick={togglePreferences}>
-          Use {theme === "light" ? "Dark" : "Light"} mode{toggle}
-        </div>
-      </div>
-      <div className="banner-wrapper">{CoverPicture()}</div>
+      <div className="top-bar"></div>
 
       <div className="content">
         <div className="title-section">
@@ -95,12 +87,17 @@ function createBannerSection(content, theme, togglePreferences) {
               content.resumeButton.label,
               process.env.PUBLIC_URL + content.resumeButton.url
             )}
-            {CoverButton(
+            {IconURL(
               content.linkedInButton.label,
-              content.linkedInButton.url
+              content.linkedInButton.url,
+              "web"
             )}
-            {CoverButton(content.emailButton.label, content.emailButton.url)}
-            {CoverButton(content.githubButton.label, content.githubButton.url)}
+            {IconURL(content.emailButton.label, content.emailButton.url, "web")}
+            {IconURL(
+              content.githubButton.label,
+              content.githubButton.url,
+              "web"
+            )}
           </div>
         </div>
       </div>

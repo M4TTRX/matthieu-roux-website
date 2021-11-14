@@ -1,16 +1,18 @@
 // theme.js
+
+const titleBlack = "#0E2026";
+const black = "#2A373C";
+
 export const lightTheme = {
-  mainColor: "#FF824A",
+  mainColor: titleBlack,
   background: "#FFFFFF",
-  title: "#FFFFFF",
-  header: "#2A373C",
-  body: "#2A373C",
+  header: titleBlack,
+  body: black,
 };
 
 export const darkTheme = {
-  mainColor: "#FF824A",
-  background: "#000000",
-  title: "#FFFFFF",
+  mainColor: titleBlack,
+  background: titleBlack,
   header: "#FFFFFF",
   body: "#F3F5F5",
 };
