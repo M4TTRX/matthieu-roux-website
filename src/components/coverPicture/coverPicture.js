@@ -5,7 +5,7 @@ function CoverPicture() {
   return (
     <div className="image-container">
       <img
-        src={require("../../resources/img/matthieu-roux-profile.jpg")}
+        src={require("../../resources/img/matthieu-roux-profile.jpg").default}
         alt="a cool pic of me"
         className="coverPhoto"
       ></img>

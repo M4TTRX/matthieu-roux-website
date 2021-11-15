@@ -33,7 +33,9 @@ function PortfolioItem(project, theme) {
 
 function image(imgName) {
   console.log(imgName);
-  let img = require("../../resources/img/portfolio/" + imgName + ".jpg");
+  let img = require("../../resources/img/portfolio/" +
+    imgName +
+    ".jpg").default;
   return <img src={img} alt="protfolio-img" className="porfolioImg"></img>;
 }
 
