@@ -64,7 +64,6 @@ function App() {
 
           {bannerSection}
           <div className="content">
-            {aboutMeSection}
             {myProjectsSection}
             {myResumeSection}
           </div>
@@ -119,12 +118,14 @@ function createAboutMe(content) {
 
 function createMyProjectsSection(content, theme) {
   var projects = [];
+  const intro = content.intro;
   for (let project of content.projects) {
     projects.push(PortfolioItem(project, theme));
   }
   return (
     <div className="padded-div">
       <h1 className="h1">{content.h1}</h1>
+      <p>{intro}</p>
       {projects}
     </div>
   );

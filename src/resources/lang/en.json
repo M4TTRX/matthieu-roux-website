@@ -2,7 +2,7 @@
   "bannerSection": {
     "resumeButton": {
       "label": "Resume",
-      "url": "/resume/resume-en.pdf"
+      "url": "/resume/ROUX_Matthieu_FR_4IF.pdf"
     },
     "linkedInButton": {
       "label": "LinkedIn",
@@ -23,6 +23,7 @@
   },
   "myProjectsSection": {
     "h1": "My Projects",
+    "intro": "Below you will find 3 projects I worked on during the past 2 years, if you like to see other projects however feel free to check out my GitHub!",
     "projects": [
       {
         "title": "Spotme",
@@ -58,7 +59,7 @@
     "body": "Want to know more about my education and work experience? Check out my resume below!",
     "button": {
       "label": "Resume",
-      "url": "/resume/resume-en.pdf"
+      "url": "/resume/ROUX_Matthieu_FR_4IF.pdf"
     }
   }
 }
