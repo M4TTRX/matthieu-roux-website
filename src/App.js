@@ -49,6 +49,7 @@ function App() {
     togglePreferences
   );
   const aboutMeSection = createAboutMe(content.aboutMeSection);
+  console.log(aboutMeSection);
   const myProjectsSection = createMyProjectsSection(
     content.myProjectsSection,
     preferences.theme
