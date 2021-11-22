@@ -90,13 +90,17 @@ function createBannerSection(content, theme, togglePreferences) {
             {IconURL(
               content.linkedInButton.label,
               content.linkedInButton.url,
-              "web"
+              "linkedin"
             )}
-            {IconURL(content.emailButton.label, content.emailButton.url, "web")}
+            {IconURL(
+              content.emailButton.label,
+              content.emailButton.url,
+              "mail"
+            )}
             {IconURL(
               content.githubButton.label,
               content.githubButton.url,
-              "web"
+              "github"
             )}
           </div>
         </div>

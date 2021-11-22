@@ -2,11 +2,20 @@ $dark: #0E2026;
 $hover: rgb(101, 146, 161);
 
 .icon-url{
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-bottom: 8px;
+    margin-right: 8px;
     color: $dark;
 }
 
 .icon-url:hover{
     color: $hover;
+}
+
+.icon{
+    position: static;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    top: 1px;
+    margin: 0px 3px;
 }

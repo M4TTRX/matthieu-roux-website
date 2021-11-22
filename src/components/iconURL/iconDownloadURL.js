@@ -1,9 +1,9 @@
 import React from "react";
 import "./iconURL.scss";
 
-function IconURL(content, url, icon) {
+function IconDownloadURL(content, url, icon) {
   return (
-    <a href={url} className="icon-url">
+    <a href={url} className="icon-url" download>
       <div target="_blank" rel="noreferrer noopener">
         <img
           src={require("../../resources/icons/" + icon + ".svg").default}
@@ -18,4 +18,4 @@ function IconURL(content, url, icon) {
   );
 }
 
-export default IconURL;
+export default IconDownloadURL;
